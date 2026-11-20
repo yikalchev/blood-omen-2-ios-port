@@ -1,6 +1,6 @@
 # Legacy of Kain: Blood Omen 2 — Native iOS Port
 
-![Blood Omen 2 native iOS showcase — real in-engine captures inside the iPad and iPhone, with a promotional backdrop inspired by Meridian's Slums](output/BloodOmen2-Native-iOS-Banner.png)
+![Blood Omen 2 native iOS showcase — real in-engine captures inside the iPad and iPhone, with a promotional backdrop inspired by Meridian's Slums](output/BloodOmen2-Native-iOS-Banner-v2.png)
 
 An independent, title-specific project bringing the PlayStation 2 version of *Legacy of Kain: Blood Omen 2* to iPhone and iPad using ahead-of-time ARM64 compilation and a Metal-backed graphics runtime. **No JIT required.**
 
