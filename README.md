@@ -8,6 +8,12 @@ An independent, title-specific project bringing the PlayStation 2 version of *Le
 
 ## Project status
 
+**Latest release: [v1.2.0](https://github.com/yikalchev/blood-omen-2-ios-port/releases/tag/v1.2.0)**
+
+- **Load/export saves:** import and export the virtual PS2 memory card from the pre-game Saves section, with automatic backup before importing.
+- **Region selection:** one IPA supports the verified EU and USA editions. Region detection is based on the game executable, not the ISO filename.
+- The selected region is displayed with a flag and controls the actual 25/50 FPS (PAL) or 30/60 FPS (NTSC) options before and during gameplay.
+
 The port has reached gameplay on a real iPhone. Initial device testing reported a smooth, sustained **50 displayed FPS** at the native PAL resolution. Higher resolution presets are available for testing, with actual performance dependent on the device and scene. The launcher, controller integration, and graphics controls are under active development.
 
 The banner uses enhanced gameplay imagery and a cinematic promotional recreation of the Slums district of Meridian. [View the alternate concept banner](assets/BloodOmen2-Concept-Banner.png).
@@ -17,11 +23,12 @@ The banner uses enhanced gameplay imagery and a cinematic promotional recreation
 - Native ARM64 ahead-of-time game runtime; no JIT or jailbreak required.
 - Dedicated Metal graphics backend and a software compatibility option.
 - Fixed Play panel with separately scrollable pre-game settings; game launches only after an explicit Play press.
-- PAL 25/50 FPS presentation options, FPS counter, full-screen and aspect-ratio modes, image filtering and real internal render-resolution presets.
+- Automatic EU/USA ISO detection, PAL 25/50 FPS or NTSC 30/60 FPS presentation options, FPS counter, full-screen and aspect-ratio modes, image filtering and real internal render-resolution presets.
 - PlayStation layout by default; Xbox and Nintendo Switch-style layouts are also available.
 - Touch controls with adjustable size, opacity and position, button mappings, analog sticks and physical controller support.
 - Automatic on-screen control visibility when an external controller connects or disconnects, controller-family indicator colors, and live mirroring of external button presses and analog stick movements when the touch layout is visible.
 - In-game controller menu, layout editing and button remapping.
+- PS2 memory-card import/export and automatic pre-import backup.
 
 ## Graphics presets
 
@@ -38,7 +45,7 @@ These are real internal rendering settings, not just output scaling. The game ca
 ## Requirements
 
 - iPhone or iPad with iOS/iPadOS 18 or later (current deployment target) and compatible Metal-capable hardware. Device compatibility is not guaranteed.
-- A lawfully obtained original **PS2 PAL disc image, SLES-50771** (ISO). Other revisions are not validated.
+- A lawfully obtained original PS2 ISO: **EU PAL SLES-50771** or **USA NTSC SLUS-20024**. Both verified boot revisions are supported; other revisions are not automatically compatible.
 - A compatible iOS signing/sideloading method for unsigned test builds.
 
 The standalone app requires the original ISO separately; it does not bundle the original disc image, BIOS or console keys.
@@ -49,7 +56,14 @@ The standalone app requires the original ISO separately; it does not bundle the 
 2. Open the app and copy your original ISO into **Files → On My iPhone → Blood Omen 2 → game**, or use **Select ISO…** in the launcher.
 3. Set your graphics, frame rate and controls, then press **Play**.
 
-At the native resolution, select 50 FPS for the full PAL refresh rate. The app maintains a separate virtual PS2 memory card.
+The launcher detects the region from the ISO's boot executable rather than its filename. If both versions are present, choose one using **Select ISO…**.
+
+| Supported edition | Serial | Frame rate options |
+| --- | --- | --- |
+| 🇪🇺 Europe (PAL) | SLES-50771 | 25 / 50 FPS |
+| 🇺🇸 USA (NTSC) | SLUS-20024 | 30 / 60 FPS |
+
+Select the full refresh option at native resolution for maximum smoothness. Actual performance depends on the device and scene. The USA edition has passed desktop boot testing through the opening cinematic; iPhone testing is still pending.
 
 ### Back up and restore game saves
 
@@ -70,7 +84,7 @@ The controller icon's glow follows the connected controller's actual hardware fa
 
 ## Releases and support
 
-This repository is an informational showcase. Public binary releases will be announced in [Releases](https://github.com/yikalchev/blood-omen-2-ios-port/releases) once distribution requirements are addressed. Please use [Issues](https://github.com/yikalchev/blood-omen-2-ios-port/issues) for reproducible compatibility or performance reports with device model, OS version, selected resolution and game scene.
+Download the standalone unsigned IPA and read the release notes in [Releases](https://github.com/yikalchev/blood-omen-2-ios-port/releases). Please use [Issues](https://github.com/yikalchev/blood-omen-2-ios-port/issues) for reproducible compatibility or performance reports with device model, OS version, selected region, resolution and game scene.
 
 ## Credits and third-party notices
 
