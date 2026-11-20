@@ -2,8 +2,6 @@
 /*
 !/.gitignore
 !/README.md
-!/output/
-/output/*
 !/output-hidden/
 /output-hidden/*
 !/output-hidden/BloodOmen2-Native-iOS-Banner-v2.png
@@ -11,6 +9,7 @@
 !/output-hidden/BloodOmen2-AppIcon.png
 
 # Development and game data are always local.
+/output/
 /source/
 /build/
 /logs/
