@@ -20,7 +20,7 @@ The banner's device screens contain real frames captured from the port; the surr
 - PAL 25/50 FPS presentation options, FPS counter, full-screen and aspect-ratio modes, image filtering and real internal render-resolution presets.
 - PlayStation layout by default; Xbox and Nintendo Switch-style layouts are also available.
 - Touch controls with adjustable size, opacity and position, button mappings, analog sticks and physical controller support.
-- Automatic on-screen control visibility when an external controller connects or disconnects, controller-family indicator colors and press feedback.
+- Automatic on-screen control visibility when an external controller connects or disconnects, controller-family indicator colors, and live mirroring of external button presses and analog stick movements when the touch layout is visible.
 - In-game controller menu, layout editing and button remapping.
 
 ## Graphics presets
@@ -55,22 +55,21 @@ At the native resolution, select 50 FPS for the full PAL refresh rate. The app m
 
 | Input | Action |
 | --- | --- |
-| Tap controller icon | Toggle touch overlay |
+| Tap controller icon or double-press L3 | Toggle touch overlay |
 | Hold controller icon or L3 for 3 seconds | Open controller menu |
-| Hold L3 + R3 for 3 seconds | Open controller menu |
-| Hold R3 for 3 seconds | Toggle analog controls |
+| Double-press R3 | Toggle 3D/analog controls |
 | Hold 3D or the layout button | Open game settings |
 
-The controller menu provides Choose layout, Button mapping, Edit layout and Close menu. Short L3/R3 presses keep their normal game functions.
+The controller menu provides Choose layout, Button mapping, Edit layout and Close menu. Single L3/R3 presses keep their normal game functions.
 
 ## Releases and support
 
 This repository is an informational showcase. Public binary releases will be announced in [Releases](https://github.com/yikalchev/blood-omen-2-ios-port/releases) once distribution requirements are addressed. Please use [Issues](https://github.com/yikalchev/blood-omen-2-ios-port/issues) for reproducible compatibility or performance reports with device model, OS version, selected resolution and game scene.
-
-![Blood Omen 2 app icon](output/BloodOmen2-AppIcon.png)
 
 ## Credits and third-party notices
 
 This project is built using PS2Apple, the [ps2-native-recomp](https://github.com/exoteric33/ps2-native-recomp) compiler/runtime, [wgpu-native](https://github.com/gfx-rs/wgpu-native) and [SDL](https://github.com/libsdl-org/SDL). The upstream compiler/runtime is MIT-licensed; components of the iOS launcher carry GPL-3.0-or-later notices. All third-party components retain their respective license terms. Any binary release must include the required notices and make applicable corresponding source available under those terms.
 
 This repository does not provide a build kit or original game disc image. Development source, logs, internal scripts, caches, and local build materials are kept outside the public Git history.
+
+<p align="center"><img src="output/BloodOmen2-AppIcon.png" alt="Blood Omen 2 app icon" width="144"></p>
