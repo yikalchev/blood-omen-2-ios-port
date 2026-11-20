@@ -1,6 +1,6 @@
 # Legacy of Kain: Blood Omen 2 — Native iOS Port
 
-![Blood Omen 2 native iOS showcase — real in-engine captures inside the iPad and iPhone, with a promotional backdrop inspired by Meridian's Slums](output/BloodOmen2-Native-iOS-Banner-v2.png)
+![Blood Omen 2 native iOS showcase — real in-engine captures inside the iPad and iPhone, with a promotional backdrop inspired by Meridian's Slums](output-hidden/BloodOmen2-Native-iOS-Banner-v2.png)
 
 An independent, title-specific project bringing the PlayStation 2 version of *Legacy of Kain: Blood Omen 2* to iPhone and iPad using ahead-of-time ARM64 compilation and a Metal-backed graphics runtime. **No JIT required.**
 
@@ -10,7 +10,7 @@ An independent, title-specific project bringing the PlayStation 2 version of *Le
 
 The port has reached gameplay on a real iPhone. Initial device testing reported a smooth, sustained **50 displayed FPS** at the native PAL resolution. Higher resolution presets are available for testing, with actual performance dependent on the device and scene. The launcher, controller integration, and graphics controls are under active development.
 
-The banner's device screens contain real frames captured from the port; the surrounding cinematic recreation of the Slums district of Meridian is promotional artwork. [View the alternate concept banner](output/BloodOmen2-Concept-Banner.png).
+The banner's device screens contain real frames captured from the port; the surrounding cinematic recreation of the Slums district of Meridian is promotional artwork. [View the alternate concept banner](output-hidden/BloodOmen2-Concept-Banner.png).
 
 ## Features
 
@@ -72,4 +72,4 @@ This project is built using PS2 compiler/runtime. The upstream compiler/runtime 
 
 This repository does not provide a build kit or original game disc image. Supply your own game ISO and place it in the `gamefolder` folder (or in `data` if the app is sideloaded, inside the app's container). Development source, logs, internal scripts, caches, and local build materials are kept outside the public Git history.
 
-<p align="center"><img src="output/BloodOmen2-AppIcon.png" alt="Blood Omen 2 app icon" width="144"></p>
+<p align="center"><img src="output-hidden/BloodOmen2-AppIcon.png" alt="Blood Omen 2 app icon" width="144"></p>
