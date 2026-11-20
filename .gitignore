@@ -4,9 +4,11 @@
 !/README.md
 !/output/
 /output/*
-!/output/BloodOmen2-Native-iOS-Banner.png
-!/output/BloodOmen2-Concept-Banner.png
-!/output/BloodOmen2-AppIcon.png
+!/output-hidden/
+/output-hidden/*
+!/output-hidden/BloodOmen2-Native-iOS-Banner-v2.png
+!/output-hidden/BloodOmen2-Concept-Banner.png
+!/output-hidden/BloodOmen2-AppIcon.png
 
 # Development and game data are always local.
 /source/
