@@ -2,11 +2,13 @@
 /*
 !/.gitignore
 !/README.md
-!/output/
-/output/*
-!/output/BloodOmen2-Native-iOS-Banner.png
-!/output/BloodOmen2-Concept-Banner.png
-!/output/BloodOmen2-AppIcon.png
+!/assets/
+/assets/*
+!/assets/BloodOmen2-Native-iOS-Banner.png
+!/assets/BloodOmen2-Concept-Banner.png
+!/assets/BloodOmen2-AppIcon.png
+!/assets/controller.svg
+!/assets/3d.svg
 
 # Development and game data are always local.
 /source/
@@ -15,6 +17,7 @@
 /Backend/
 /scripts/
 /docs/
+/output/
 *.iso
 *.chd
 *.bios

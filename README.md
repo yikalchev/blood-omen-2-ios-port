@@ -1,6 +1,6 @@
 # Legacy of Kain: Blood Omen 2 — Native iOS Port
 
-![Blood Omen 2 native iOS showcase — real in-engine captures inside the iPad and iPhone, with a promotional backdrop inspired by Meridian's Slums](output/BloodOmen2-Native-iOS-Banner.png)
+![Blood Omen 2 native iOS showcase — enhanced gameplay imagery inside the iPad and iPhone](assets/BloodOmen2-Native-iOS-Banner.png)
 
 An independent, title-specific project bringing the PlayStation 2 version of *Legacy of Kain: Blood Omen 2* to iPhone and iPad using ahead-of-time ARM64 compilation and a Metal-backed graphics runtime. **No JIT required.**
 
@@ -10,7 +10,7 @@ An independent, title-specific project bringing the PlayStation 2 version of *Le
 
 The port has reached gameplay on a real iPhone. Initial device testing reported a smooth, sustained **50 displayed FPS** at the native PAL resolution. Higher resolution presets are available for testing, with actual performance dependent on the device and scene. The launcher, controller integration, and graphics controls are under active development.
 
-The banner's device screens contain real frames captured from the port; the surrounding cinematic recreation of the Slums district of Meridian is promotional artwork. [View the alternate concept banner](output/BloodOmen2-Concept-Banner.png).
+The banner uses enhanced gameplay imagery and a cinematic promotional recreation of the Slums district of Meridian. [View the alternate concept banner](assets/BloodOmen2-Concept-Banner.png).
 
 ## Features
 
@@ -51,16 +51,22 @@ The standalone app requires the original ISO separately; it does not bundle the 
 
 At the native resolution, select 50 FPS for the full PAL refresh rate. The app maintains a separate virtual PS2 memory card.
 
+### Back up and restore game saves
+
+From the pre-game **Saves** section, select **Export saves…** to copy the complete PS2 memory card to Files, or **Import saves…** to restore a compatible `.ps2` card (8,650,752 bytes, including ECC). Imported cards are checked before replacement; existing cards are copied to `saves/Backups` in the app's Files folder. Press Play afterward and use the game's Load or Continue option. This transfers normal in-game saves, not instant save states.
+
 ## Controller shortcuts
 
-| Input | Action |
-| --- | --- |
-| Tap controller icon or double-press L3 | Toggle touch overlay |
-| Hold controller icon or L3 for 3 seconds | Open controller menu |
-| Double-press R3 | Toggle 3D/analog controls |
-| Hold 3D or the layout button | Open game settings |
+| On-screen button | Physical controller | Action |
+| --- | --- | --- |
+| <img src="assets/controller.svg" width="36" alt="Controller"> Tap controller | Double-press L3 | Show/hide touch screen layout |
+| <img src="assets/3d.svg" width="36" alt="3D"> Tap 3D | Double-press R3 | Show/hide analog sticks and L3/R3 buttons |
+| <img src="assets/controller.svg" width="36" alt="Controller"> Hold controller for 3 seconds | Hold L3 for 3 seconds | Open controller menu |
+| <img src="assets/3d.svg" width="36" alt="3D"> Hold 3D for 3 seconds | Hold R3 for 3 seconds | Open game settings |
 
 The controller menu provides Choose layout, Button mapping, Edit layout and Close menu. Single L3/R3 presses keep their normal game functions.
+
+The controller icon's glow follows the connected controller's actual hardware family as recognized by the system, regardless of the selected touch layout: 🔵 PlayStation, 🟢 Xbox, 🔴 Nintendo Switch, ⚪ other/unknown or disconnected (neutral white, no glow when disconnected).
 
 ## Releases and support
 
@@ -72,4 +78,4 @@ This project is built using PS2Apple, the [ps2-native-recomp](https://github.com
 
 This repository does not provide a build kit or original game disc image. Development source, logs, internal scripts, caches, and local build materials are kept outside the public Git history.
 
-<p align="center"><img src="output/BloodOmen2-AppIcon.png" alt="Blood Omen 2 app icon" width="144"></p>
+<p align="center"><img src="assets/BloodOmen2-AppIcon.png" alt="Blood Omen 2 app icon" width="144"></p>
