@@ -8,7 +8,7 @@ An independent, title-specific project bringing the PlayStation 2 version of *Le
 
 ## Project status
 
-**Latest release: [v1.2.0](https://github.com/yikalchev/blood-omen-2-ios-port/releases/tag/v1.2.0)**
+**Latest release: [v1.1.0](https://github.com/yikalchev/blood-omen-2-ios-port/releases/tag/v1.1.0)**
 
 - **Load/export saves:** import and export the virtual PS2 memory card from the pre-game Saves section, with automatic backup before importing.
 - **Region selection:** one IPA supports the verified EU and USA editions. Region detection is based on the game executable, not the ISO filename.
