@@ -57,12 +57,12 @@ From the pre-game **Saves** section, select **Export saves…** to copy the comp
 
 ## Controller shortcuts
 
-| On-screen button | Physical controller | Action |
-| --- | --- | --- |
-| <img src="assets/controller.svg" width="36" alt="Controller"> Tap controller | Double-press L3 | Show/hide touch screen layout |
-| <img src="assets/3d.svg" width="36" alt="3D"> Tap 3D | Double-press R3 | Show/hide analog sticks and L3/R3 buttons |
-| <img src="assets/controller.svg" width="36" alt="Controller"> Hold controller for 3 seconds | Hold L3 for 3 seconds | Open controller menu |
-| <img src="assets/3d.svg" width="36" alt="3D"> Hold 3D for 3 seconds | Hold R3 for 3 seconds | Open game settings |
+| | On-screen button | Physical controller | Action |
+| --- | --- | --- | --- |
+| <img src="assets/controller.svg" width="36" alt="Controller"> | Tap controller | Double-press L3 | Show/hide touch screen layout |
+| <img src="assets/3d.svg" width="36" alt="3D"> | Tap 3D | Double-press R3 | Show/hide analog sticks and L3/R3 buttons |
+| <img src="assets/controller.svg" width="36" alt="Controller"> | Hold controller for 3 seconds | Hold L3 for 3 seconds | Open controller menu |
+| <img src="assets/3d.svg" width="36" alt="3D"> | Hold 3D for 3 seconds | Hold R3 for 3 seconds | Open game settings |
 
 The controller menu provides Choose layout, Button mapping, Edit layout and Close menu. Single L3/R3 presses keep their normal game functions.
 
