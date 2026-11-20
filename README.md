@@ -74,8 +74,8 @@ This repository is an informational showcase. Public binary releases will be ann
 
 ## Credits and third-party notices
 
-This project is built using PS2Apple, the [ps2-native-recomp](https://github.com/exoteric33/ps2-native-recomp) compiler/runtime, [wgpu-native](https://github.com/gfx-rs/wgpu-native) and [SDL](https://github.com/libsdl-org/SDL). The upstream compiler/runtime is MIT-licensed; components of the iOS launcher carry GPL-3.0-or-later notices. All third-party components retain their respective license terms. Any binary release must include the required notices and make applicable corresponding source available under those terms.
+This project is built using PS2 compiler/runtime. The upstream compiler/runtime is MIT-licensed; components of the iOS launcher carry GPL-3.0-or-later notices. All third-party components retain their respective license terms. Any binary release must include the required notices and make applicable corresponding source available under those terms.
 
-This repository does not provide a build kit or original game disc image. Development source, logs, internal scripts, caches, and local build materials are kept outside the public Git history.
+This repository does not provide a build kit or original game disc image. Supply your own game ISO and place it in the `gamefolder` folder (or in `data` if the app is sideloaded, inside the app's container). Development source, logs, internal scripts, caches, and local build materials are kept outside the public Git history.
 
 <p align="center"><img src="assets/BloodOmen2-AppIcon.png" alt="Blood Omen 2 app icon" width="144"></p>

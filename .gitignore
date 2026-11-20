@@ -11,13 +11,13 @@
 !/assets/3d.svg
 
 # Development and game data are always local.
+/output/
 /source/
 /build/
 /logs/
 /Backend/
 /scripts/
 /docs/
-/output/
 *.iso
 *.chd
 *.bios
